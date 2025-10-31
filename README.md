@@ -20,6 +20,41 @@ This document serves as the final report and documentation for the comprehensive
 
 The project is organized according to Playwright and POM best practices, ensuring logical separation of concerns.
 
+
+
+
+
+```bash
+PLAYWRIGHT_Tech_Task/
+├── allure-report/              
+├── allure-results/              
+├── node_modules/
+├── tests/
+│   ├── pageobjects/           
+│   │   ├── cart.page.ts
+│   │   ├── checkout.page.ts
+│   │   ├── inventary.page.ts
+│   │   └── login.page.ts
+│   ├── specs/
+│   │   ├── alure-report/                 
+│   │   ├── api.tests/
+│   │   │   └── api.tests.spec.ts
+│   │   ├── visual_user.spec.ts-snapshots/
+│   │   ├── visual_user.test.ts-snapshots/ 
+│   │   ├── error_user.test.ts
+│   │   ├── locked_out_user.test.ts
+│   │   ├── performance_glitch_user.spec.ts
+│   │   ├── problem_user.spec.ts
+│   │   ├── standard_user.spec.ts
+│   │   └── visual_user.spec.ts  
+└── playwright.config.ts         
+```
+
+
+
+
+
+
 ## 3. Test Plan Summary and Code Rationale
 
 The framework covers all major features, utilizing unique user roles as **fixtures** to validate different system states and failure conditions.
@@ -34,17 +69,56 @@ The framework covers all major features, utilizing unique user roles as **fixtur
 
 ## 4. Execution & Report
 
-#### Run all tests
-npx playwright test
+## Test Execution
+
+1. Navigate to the project directory:
+
+   ```bash
+   cd playwright_test_task
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Run the tests:
+
+   ```bash
+   npx playwright test
+   ```
 
 ---
-#### Run report
+## Allure install & run
 
-allure generate allure-results --clean
+1. Open your terminal and paste:
 
----
-#### Open report 
-allure open
+   ```bash
+   brew install allure
+   ```
+
+
+
+2. Navigate to your project's root directory in the terminal & run the command 
+
+   ```bash
+   npm install --save-dev allure-commandline
+   ```
+
+3. Add allure-playwright to your list of reporters in your playwright.config.ts
+4. Generate reporter after test exictuion : 
+
+   ```bash
+   allure generate allure-results --clean
+   ```
+
+5.Open the report in your browser : 
+
+   ```bash
+   allure open
+   ```
+
 
 ---
 
