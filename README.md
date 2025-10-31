@@ -52,8 +52,13 @@ PLAYWRIGHT_Tech_Task/
 
 
 
+## 3. Page Objects and Componentization
 
-## 3. Test Plan Summary and Code Rationale
+The project embraces the Page Object Model (POM) pattern to encapsulate interactions with various pages of the SauceDemo website. Page objects are organized under the pageobjects/ directory, making the test code more readable, maintainable, and less  duplication.
+
+---
+
+## 4. Test Plan Summary and Code Rationale
 
 The framework covers all major features, utilizing unique user roles as **fixtures** to validate different system states and failure conditions.
 
@@ -65,7 +70,7 @@ The framework covers all major features, utilizing unique user roles as **fixtur
 
 ---
 
-## 4. Execution & Report
+## 5. Execution & Report
 
 ### Test Execution
 
@@ -133,7 +138,7 @@ The framework covers all major features, utilizing unique user roles as **fixtur
 
 ---
 
-## 5. Addational annation 
+## 6. Addational annation 
 
 I chose Playwright as the main framework for several key reasons that directly meet the requirements for a  technical assesment:
 #### Combine (UI + API)
