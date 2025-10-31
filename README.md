@@ -1,6 +1,6 @@
 # E2E Testing Framework (Playwright + TypeScript)
 
-This document serves as the final report and documentation for the comprehensive End-to-End (E2E) testing framework developed using **Playwright** and **TypeScript**. The framework is designed to validate both the **User Interface (UI)** for the Sauce Demo application and the core functionality of the **Petstore RESTful API**, fulfilling all technical assignment requirements.
+This document serves as the final report and documentation for the comprehensive End-to-End (E2E) testing framework developed using **Playwright** and **TypeScript**. The framework is designed to validate both the **User Interface (UI)** for the Sauce Demo application and the core functionality of the **Petstore RESTful API**, fulfilling all technical assignment requirements. Test Plan can be found  [here](/TestPlan.md).
 
 ---
 
