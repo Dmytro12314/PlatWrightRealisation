@@ -67,7 +67,7 @@ The framework covers all major features, utilizing unique user roles as **fixtur
 
 ## 4. Execution & Report
 
-## Test Execution
+### Test Execution
 
 1. Navigate to the project directory:
 
@@ -88,7 +88,7 @@ The framework covers all major features, utilizing unique user roles as **fixtur
    ```
 
 ---
-## Allure install & run
+### Allure install & run
 
 1. Open your terminal and paste:
 
@@ -120,7 +120,20 @@ The framework covers all major features, utilizing unique user roles as **fixtur
 
 ---
 
-### 5. Addational annation 
+###  Dotenv credentials dependencies
+
+1.install dotenv for credentials 
+
+
+ ```bash
+   npm install dotenv
+   ```
+
+2.Add  dotenv  in your playwright.config.ts
+
+---
+
+## 5. Addational annation 
 
 I chose Playwright as the main framework for several key reasons that directly meet the requirements for a  technical assesment:
 #### Combine (UI + API)
