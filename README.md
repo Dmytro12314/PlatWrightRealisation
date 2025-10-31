@@ -1,4 +1,4 @@
-# PlatWrightRealisation
+# PlayWrite Technical Description
 
 # E2E Testing Framework (Playwright + TypeScript)
 
