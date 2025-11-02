@@ -23,29 +23,38 @@ The project is organized according to Playwright and POM best practices, ensurin
 
 
 ```bash
-PLAYWRIGHT_Tech_Task/
-├── allure-report/              
-├── allure-results/              
-├── node_modules/
+ project-SouceDemo&ApiPetStore/
+├── node_modules/                                
 ├── tests/
-│   ├── pageobjects/           
-│   │   ├── cart.page.ts
-│   │   ├── checkout.page.ts
-│   │   ├── inventary.page.ts
-│   │   └── login.page.ts
-│   ├── specs/
-│   │   ├── alure-report/                 
-│   │   ├── api.tests/
-│   │   │   └── api.tests.spec.ts
-│   │   ├── visual_user.spec.ts-snapshots/
-│   │   ├── visual_user.test.ts-snapshots/ 
-│   │   ├── error_user.test.ts
-│   │   ├── locked_out_user.test.ts
-│   │   ├── performance_glitch_user.spec.ts
-│   │   ├── problem_user.spec.ts
-│   │   ├── standard_user.spec.ts
-│   │   └── visual_user.spec.ts  
-└── playwright.config.ts         
+│   ├── pageobjects/                            
+│   │   ├── pet.store.pageobject/
+│   │   │   └── pet.store.api.ts                 
+│   │   └── saucedemo.pageobjects/
+│   │       ├── cart.page.ts                     
+│   │       ├── checkout.page.ts                 
+│   │       ├── inventory.page.ts                
+│   │       └── login.page.ts                    
+│   ├── specs/                                   
+│   │   ├── api.tests.petstore/
+│   │   │   ├── pet.api.delete.spec.ts            
+│   │   │   ├── pet.api.get.spec.ts              
+│   │   │   ├── pet.api.post.spec.ts                           
+│   │   ├── ui.tests.saucedemo/
+│   │   │   ├── error_user.test.ts               
+│   │   │   ├── locked_out_user.test.ts          
+│   │   │   ├── performance_glitch_user.spec.ts   
+│   │   │   ├── problem_user.spec.ts             
+│   │   │   ├── standard_user.spec.ts           
+│   │   │   └── visual_user.spec.ts               
+│   └── utils/                                    
+│       ├── api.assertions.ts                    
+│       ├── credentials.ts                        
+│       ├── data-api.ts                          
+├── .env                                         
+├── .gitignore
+├── package-lock.json
+├── package.json
+└── playwright.config.ts
 ```
 
 
