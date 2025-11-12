@@ -27,7 +27,7 @@ test.describe('Problem user', () => {
     test('should detect broken images and form errors', async () => {
         await loginPage.login('problem_user', creds.users['problem_user']);
         await inventoryPage.waitForPage();
-        const imgSrc: string = await inventoryPage.firstItemImage.getAttribute('src') ?? '';
+        const imgSrc: string = await inventoryPage.firstItemImage.getAttribute('src') || '';
         expect(imgSrc).toContain('sl-404');
         await inventoryPage.addItemToCart(1);
         await inventoryPage.openCart();
