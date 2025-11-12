@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 import credentials from "../../../utils/credentials";
-import LoginPage from "../../pageobjects/saucedemo.pageobjects/login.page";
-import InventoryPage from "../../pageobjects/saucedemo.pageobjects/inventory.page";
+import LoginPage from "../../pageobjects/login.page";
+import InventoryPage from "../../pageobjects/inventory.page";
 
 
 

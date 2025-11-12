@@ -1,11 +1,9 @@
-import { test, expect } from '@playwright/test';
-import LoginPage from "../../pageobjects/saucedemo.pageobjects/login.page";
-import InventoryPage from "../../pageobjects/saucedemo.pageobjects/inventory.page";
-import CartPage from "../../pageobjects/saucedemo.pageobjects/cart.page";
-import CheckoutPage from "../../pageobjects/saucedemo.pageobjects/checkout.page";
+import { test, expect } from "@playwright/test";
+import LoginPage from "../../pageobjects/login.page";
+import InventoryPage from "../../pageobjects/inventory.page";
+import CartPage from "../../pageobjects/cart.page";
+import CheckoutPage from "../../pageobjects/checkout.page";
 import credentials from "../../../utils/credentials";
-
-
 
 const creds = credentials;
 
