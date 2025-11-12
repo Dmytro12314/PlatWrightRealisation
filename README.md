@@ -36,9 +36,7 @@ The project is organized according to Playwright and POM best practices, ensurin
 │   │       └── login.page.ts                    
 │   ├── specs/                                   
 │   │   ├── api.tests.petstore/
-│   │   │   ├── pet.api.delete.spec.ts            
-│   │   │   ├── pet.api.get.spec.ts              
-│   │   │   ├── pet.api.post.spec.ts                           
+│   │   │   ├── pet.api.spec.ts       
 │   │   ├── ui.tests.saucedemo/
 │   │   │   ├── error_user.test.ts               
 │   │   │   ├── locked_out_user.test.ts          
@@ -46,10 +44,8 @@ The project is organized according to Playwright and POM best practices, ensurin
 │   │   │   ├── problem_user.spec.ts             
 │   │   │   ├── standard_user.spec.ts           
 │   │   │   └── visual_user.spec.ts               
-│   └── utils/                                    
-│       ├── api.assertions.ts                    
-│       ├── credentials.ts                        
-│       ├── data-api.ts                          
+│   └── utils/                                                       
+│       ├── credentials.ts                                                
 ├── .env                                         
 ├── .gitignore
 ├── package-lock.json
