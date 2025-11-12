@@ -1,7 +1,7 @@
 import * as dotenv from "dotenv";
+import path from "path";
 
-dotenv.config();
-
+dotenv.config({ path: path.resolve(__dirname, '../.env') });
 type Credentials = {
   users: {
     standard_user: string;
@@ -16,7 +16,7 @@ type Credentials = {
 export const getCredentials = (): Credentials => {
   return {
     users: {
-      standard_user: process.env.STANDARD_USER_PASSWORD || "",
+      standard_user: process.env.STANDARD_USER_PASSWORD|| "",
       error_user: process.env.ERROR_USER_PASSWORD || "",
       locked_out_user: process.env.LOCKED_OUT_USER_PASSWORD || "",
       performance_glitch_user: process.env.PERFORMANCE_GLITCH_USER_PASSWORD || "",
@@ -25,5 +25,5 @@ export const getCredentials = (): Credentials => {
     },
   };
 };
-
+console.log(getCredentials())
 export default getCredentials();
